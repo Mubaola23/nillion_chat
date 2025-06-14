@@ -286,7 +286,7 @@ class _ChatViewState extends State<ChatView> {
                     child: CircularProgressIndicator(strokeWidth: 2),
                   ),
                   SizedBox(width: 8),
-                  Text('Encrypting message...', style: TextStyle(fontSize: 12)),
+                  Text('Fetching response...', style: TextStyle(fontSize: 12)),
                 ],
               ),
             ),
