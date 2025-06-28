@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ai_toolkit/flutter_ai_toolkit.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
+import 'package:nillion_chat/service/utils/app_environmental_variables.dart';
 
 class GeminiMedicalChatView extends StatefulWidget {
   const GeminiMedicalChatView({super.key});
@@ -10,7 +11,7 @@ class GeminiMedicalChatView extends StatefulWidget {
 }
 
 class _GeminiMedicalChatViewState extends State<GeminiMedicalChatView> {
-  String apiKey = "AIzaSyBgN98INBeeXkQ4_Yfw6Gp9goShqkPbpiE";
+  String apiKey = AppEnvironmentalVariables.googleApiKey;
 
   @override
   void initState() {
