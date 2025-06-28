@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@keplr-wallet/provider-extension": "^0.12.243"
+  }
+}

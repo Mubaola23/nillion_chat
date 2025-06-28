@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   http: ^1.4.0
   flutter_svg: ^2.1.0
+  flutter_ai_toolkit: ^0.6.8
+  google_generative_ai: ^0.4.6
 
 dev_dependencies:
   flutter_test:
@@ -89,3 +91,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+# +1 (437) 774-9825

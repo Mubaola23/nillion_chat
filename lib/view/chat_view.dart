@@ -5,6 +5,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:nillion_chat/model/ai_message_response.dart';
 import 'package:nillion_chat/model/message_model.dart';
 import 'package:nillion_chat/service/nillion_api_service.dart';
+import 'package:nillion_chat/service/utils/colors.dart';
+import 'package:nillion_chat/service/utils/images.dart';
 
 class ChatView extends StatefulWidget {
   const ChatView({super.key});
@@ -125,8 +127,10 @@ class _ChatViewState extends State<ChatView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(children: [SvgPicture.asset('assets/logo.svg', width: 100)]),
-        backgroundColor: const Color.fromRGBO(0, 33, 245, 1.0),
+        title: Row(
+          children: [SvgPicture.asset(AppImages.nillionLogo, width: 100)],
+        ),
+        backgroundColor: AppColors.primaryColor,
         elevation: 0,
       ),
       body: Column(
@@ -167,7 +171,7 @@ class _ChatViewState extends State<ChatView> {
                       if (isSystem) ...[
                         CircleAvatar(
                           radius: 16,
-                          backgroundColor: Color.fromRGBO(0, 33, 245, 1.0),
+                          backgroundColor: AppColors.primaryColor,
                           child: Text(
                             message.sender[0],
                             style: TextStyle(
@@ -192,7 +196,7 @@ class _ChatViewState extends State<ChatView> {
                           decoration: BoxDecoration(
                             color: isSystem
                                 ? Colors.grey[300]
-                                : Color.fromRGBO(0, 33, 245, 1.0),
+                                : AppColors.primaryColor,
                             borderRadius: BorderRadius.circular(20),
                             boxShadow: [
                               BoxShadow(
@@ -255,7 +259,7 @@ class _ChatViewState extends State<ChatView> {
                         SizedBox(width: 8),
                         CircleAvatar(
                           radius: 16,
-                          backgroundColor: Color.fromRGBO(0, 33, 245, 1.0),
+                          backgroundColor: AppColors.primaryColor,
                           child: Text(
                             message.sender[0],
                             style: TextStyle(
@@ -330,7 +334,7 @@ class _ChatViewState extends State<ChatView> {
                 FloatingActionButton(
                   onPressed: _sendMessage,
                   mini: true,
-                  backgroundColor: Color.fromRGBO(0, 33, 245, 1.0),
+                  backgroundColor: AppColors.primaryColor,
                   child: Icon(Icons.send, color: Colors.white),
                 ),
               ],

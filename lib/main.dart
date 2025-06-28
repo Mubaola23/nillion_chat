@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nillion_chat/view/chat_view.dart';
+import 'package:nillion_chat/view/nillion_thread_app_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ChatView(),
+      home: NillionThreadAppView(),
       debugShowCheckedModeBanner: false,
     );
   }
